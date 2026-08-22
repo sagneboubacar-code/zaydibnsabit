@@ -8,13 +8,13 @@ const DEFAULT_TARIFS = {
   collegeInternat: { inscription: 100000, mensualite: 135000, tenues: 25000, gouter: 15000 },
   collegeExternat: { inscription: 70000, mensualite: 70000, tenues: 25000, gouter: 0 },
   elementaireInternat: { inscription: 100000, mensualite: 100000, tenues: 35000, gouter: 0 },
-  elementaireDemiPension: { inscription: 35000, mensualite: 35000, tenues: 12500, gouter: 0 },
+  elementaireDemiPension: { inscription: 45000, mensualite: 45000, tenues: 12500, gouter: 0 },
   lyceeInternat: { inscription: 100000, mensualite: 100000, tenues: 25000, gouter: 0 },
   karate: { inscription: 10000, tenue: 7000, mensualite: 5000, combo: 15000 }
 };
 
 // Initialisation des données de tarifs depuis le localStorage ou par défaut
-let currentTarifs = JSON.parse(localStorage.getItem('zayd_tarifs_2026')) || DEFAULT_TARIFS;
+let currentTarifs = JSON.parse(localStorage.getItem('zayd_tarifs_2026_v2')) || DEFAULT_TARIFS;
 
 // Numéros de téléphone de l'école
 const PHONE_WHATSAPP = '221700038475'; // +221 70 003 84 75
@@ -467,7 +467,7 @@ function saveAdminTarifs() {
     }
   };
 
-  localStorage.setItem('zayd_tarifs_2026', JSON.stringify(currentTarifs));
+  localStorage.setItem('zayd_tarifs_2026_v2', JSON.stringify(currentTarifs));
 }
 
 // 8. Notification Toast
