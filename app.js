@@ -169,13 +169,13 @@ function initCalculator() {
       mens += currentTarifs.karate.mensualite;
     }
 
-    const firstMonthTotal = inscr + tenue + mens;
+    const initialTotal = inscr + tenue;
     const annualTotal = inscr + tenue + (mens * 10); // 10 mois scolaires
 
     setElementText('calcResultInscr', formatFCFA(inscr));
     setElementText('calcResultTenue', formatFCFA(tenue));
     setElementText('calcResultMens', formatFCFA(mens) + ' / mois');
-    setElementText('calcResultFirstMonth', formatFCFA(firstMonthTotal));
+    setElementText('calcResultFirstMonth', formatFCFA(initialTotal));
     setElementText('calcResultAnnual', formatFCFA(annualTotal));
   }
 
