@@ -479,6 +479,7 @@ function showToast(message, type = 'info') {
   if (!toast || !toastMsg) return;
 
   toastMsg.textContent = message;
+  toast.classList.remove('hidden', 'opacity-0', 'pointer-events-none');
   
   if (type === 'success') {
     toast.style.borderLeftColor = '#10B981';
@@ -494,7 +495,10 @@ function showToast(message, type = 'info') {
   toast.classList.add('show');
   setTimeout(() => {
     toast.classList.remove('show');
-  }, 4000);
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 400);
+  }, 3500);
 }
 
 // 9. Export pour réinitialiser les tarifs si besoin
