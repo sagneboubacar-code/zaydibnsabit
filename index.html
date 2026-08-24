@@ -699,12 +699,12 @@
             </div>
             <h3 class="text-2xl font-bold text-primary mb-3 font-display">7. Activités & Sorties</h3>
             <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-              Sorties interscolaires, excursions éducatives et activités de cohésion permettant aux élèves de développer leur sociabilité et leur esprit d'équipe.
+              Excursions spirituelles, éducatives et récréatives (Musée du Prophète, Magic Land, sorties interscolaires) pour forger la culture, l'amitié et la cohésion des élèves.
             </p>
             <div class="space-y-2 mb-6 text-xs text-slate-700">
-              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Visites culturelles et scientifiques</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Compétitions interscolaires</div>
-              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Épanouissement personnel et collectif</div>
+              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Sorties au Musée du Prophète (Histoire & Foi)</div>
+              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Journées récréatives au Magic Land Dakar</div>
+              <div class="flex items-center gap-2"><i class="fas fa-check text-amber-600"></i> Épanouissement personnel et esprit d'équipe</div>
             </div>
           </div>
           <a href="#viescolaire" class="btn-navy text-center py-2.5 rounded-lg text-xs font-bold">
@@ -1490,37 +1490,94 @@
       <!-- Filters -->
       <div class="flex flex-wrap justify-center gap-2 mb-10">
         <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-primary text-white transition active" data-filter="all">Tous les Médias</button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-gold transition" data-filter="sorties"><i class="fas fa-bus mr-1 text-gold"></i> Sorties des Élèves</button>
+        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-gold transition" data-filter="videos"><i class="fas fa-video mr-1 text-gold"></i> Toutes les Vidéos</button>
         <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-gold transition" data-filter="internat">Internat & Dortoirs</button>
         <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-gold transition" data-filter="salles">Salles & Coran</button>
-        <button class="gallery-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-300 hover:border-gold transition" data-filter="videos">Vidéos Officielles</button>
       </div>
 
       <!-- Gallery Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryContainer">
         
-        <!-- Video 1 -->
-        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="videos">
+        <!-- Video Sortie 1 : Musée du Prophète 1 -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="sorties videos">
+          <div class="relative h-64 cursor-pointer" onclick="openVideoModal('SORTIE MUSEE DU PROPHETE.mp4', 'Sortie Éducative : Visite au Musée du Prophète (Partie 1)')">
+            <img src="IMAGE PAGE ACCUEIL.jpeg" alt="Sortie Musée du Prophète" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
+            <div class="video-play-btn">
+              <i class="fas fa-play text-sm ml-0.5"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-600 text-white px-2 py-0.5 rounded">Sortie Éducative</span>
+              <p class="font-bold text-sm mt-1">Musée du Prophète ﷺ (Partie 1)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Sortie 2 : Musée du Prophète 2 -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="sorties videos">
+          <div class="relative h-64 cursor-pointer" onclick="openVideoModal('SORTIE MUSEE DU PROPHETE 2.mp4', 'Sortie Éducative : Visite au Musée du Prophète (Partie 2)')">
+            <img src="SALLE APPRENTISSAGE CORAN .jpeg" alt="Sortie Musée du Prophète 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
+            <div class="video-play-btn">
+              <i class="fas fa-play text-sm ml-0.5"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-600 text-white px-2 py-0.5 rounded">Sortie Éducative</span>
+              <p class="font-bold text-sm mt-1">Musée du Prophète ﷺ (Partie 2)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Sortie 3 : Magic Land 1 -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="sorties videos">
+          <div class="relative h-64 cursor-pointer" onclick="openVideoModal('SORTIE MAGIC LAND.mp4', 'Journée Récréative : Sortie au Magic Land Dakar (Partie 1)')">
+            <img src="IMAGE INTERNAT 3.jpeg" alt="Sortie Magic Land" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
+            <div class="video-play-btn">
+              <i class="fas fa-play text-sm ml-0.5"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-500 text-slate-950 px-2 py-0.5 rounded">Sortie Récréative</span>
+              <p class="font-bold text-sm mt-1">Magic Land Dakar (Partie 1)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Sortie 4 : Magic Land 2 -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="sorties videos">
+          <div class="relative h-64 cursor-pointer" onclick="openVideoModal('SORTIE MAGIG LANG 2.mp4', 'Journée Récréative : Sortie au Magic Land Dakar (Partie 2)')">
+            <img src="IMAGE INTERNAT 1.jpeg" alt="Sortie Magic Land 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
+            <div class="video-play-btn">
+              <i class="fas fa-play text-sm ml-0.5"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-500 text-slate-950 px-2 py-0.5 rounded">Sortie Récréative</span>
+              <p class="font-bold text-sm mt-1">Magic Land Dakar (Partie 2)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 1 : Salles de classe -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="videos salles">
           <div class="relative h-64 cursor-pointer" onclick="openVideoModal('VIDEO SALLE CLASSE ECOLE.mp4', 'Visite guidée des salles de classe Zayd Ibn Thabit')">
             <img src="IMAGE PAGE ACCUEIL.jpeg" alt="Vidéo Salles de classe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
             <div class="video-play-btn">
               <i class="fas fa-play text-sm ml-0.5"></i>
             </div>
             <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
-              <span class="text-[10px] font-bold uppercase tracking-wider bg-gold text-primary px-2 py-0.5 rounded">Vidéo</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-gold text-primary px-2 py-0.5 rounded">Établissement</span>
               <p class="font-bold text-sm mt-1">Salles de classe et espace d'enseignement</p>
             </div>
           </div>
         </div>
 
-        <!-- Video 2 -->
-        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="videos">
+        <!-- Video 2 : Toilettes / Internat -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-900 border border-slate-300" data-category="videos internat">
           <div class="relative h-64 cursor-pointer" onclick="openVideoModal('VIDEO TOILLET INTERNAT.mp4', 'Sanitaires et commodités de l\'Internat')">
             <img src="IMAGE INTERNAT 2.jpeg" alt="Vidéo Sanitaires" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-70">
             <div class="video-play-btn">
               <i class="fas fa-play text-sm ml-0.5"></i>
             </div>
             <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 to-transparent text-white">
-              <span class="text-[10px] font-bold uppercase tracking-wider bg-gold text-primary px-2 py-0.5 rounded">Vidéo</span>
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-gold text-primary px-2 py-0.5 rounded">Internat</span>
               <p class="font-bold text-sm mt-1">Sanitaires modernes et commodités internat</p>
             </div>
           </div>
@@ -1565,7 +1622,20 @@
           </div>
         </div>
 
-        <!-- Photo 4: Internat 3 -->
+        <!-- Photo 4: Internat 2 -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-100 border border-slate-200" data-category="internat">
+          <div class="h-64 cursor-pointer relative" onclick="openLightbox('IMAGE INTERNAT 2.jpeg', 'Installations et propreté de l\'internat')">
+            <img src="IMAGE INTERNAT 2.jpeg" alt="Internat 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white">
+              <i class="fas fa-expand text-2xl bg-primary/80 p-3 rounded-full"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/80 to-transparent text-white">
+              <p class="font-bold text-xs">Hygiène et cadre de propreté</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 5: Internat 3 -->
         <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-100 border border-slate-200" data-category="internat">
           <div class="h-64 cursor-pointer relative" onclick="openLightbox('IMAGE INTERNAT 3.jpeg', 'Environnement calme et propice aux études')">
             <img src="IMAGE INTERNAT 3.jpeg" alt="Internat 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -1574,6 +1644,19 @@
             </div>
             <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/80 to-transparent text-white">
               <p class="font-bold text-xs">Cadre calme et sécurisé à Malika</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo 6: Accueil / Cadre général -->
+        <div class="gallery-item rounded-2xl overflow-hidden shadow-md group relative bg-slate-100 border border-slate-200" data-category="salles">
+          <div class="h-64 cursor-pointer relative" onclick="openLightbox('IMAGE PAGE ACCUEIL.jpeg', 'École Privée Franco-Arabe Zayd Ibn Thabit')">
+            <img src="IMAGE PAGE ACCUEIL.jpeg" alt="Accueil" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white">
+              <i class="fas fa-expand text-2xl bg-primary/80 p-3 rounded-full"></i>
+            </div>
+            <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/80 to-transparent text-white">
+              <p class="font-bold text-xs">Entrée et vie quotidienne</p>
             </div>
           </div>
         </div>

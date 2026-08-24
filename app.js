@@ -263,7 +263,8 @@ function initGalleryFilter() {
       const filter = btn.getAttribute('data-filter');
 
       galleryItems.forEach(item => {
-        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+        const cat = item.getAttribute('data-category') || '';
+        if (filter === 'all' || cat.split(' ').includes(filter)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
